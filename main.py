@@ -1,11 +1,13 @@
 from gtts import gTTS
+from playsound import playsound
 
 def english_lang(text):
 	tts = gTTS(text,lang='en')
-	tts.save("en_audio.mp3")
+	tts.save(r"audio/en_audio.mp3")
+	playsound(r"audio/en_audio.mp3")
 
 def arabic_lang(text):
 	tts = gTTS(text,lang='ar')
-	tts.save("ar_audio.mp3")
+	tts.save("audio/ar_audio.mp3")
 
-arabic_lang("تجربة")
+english_lang("i'm slim shady please")
