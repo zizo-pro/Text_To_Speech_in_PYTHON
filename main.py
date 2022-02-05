@@ -9,5 +9,4 @@ def english_lang(text):
 def arabic_lang(text):
 	tts = gTTS(text,lang='ar')
 	tts.save("audio/ar_audio.mp3")
-
-english_lang("i'm slim shady please")
+    playsound(r"audio/ar_audio.mp3")
